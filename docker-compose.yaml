@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backendlive:
+    image: postgres
+    container_name: backendlive
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_PASSWORD: adminpg
+      POSTGRES_USER: admin
+    restart: always
